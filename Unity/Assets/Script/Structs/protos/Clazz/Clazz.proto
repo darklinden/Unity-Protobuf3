@@ -1,0 +1,10 @@
+syntax = "proto3";
+package school;
+import "Student.proto";
+import "Teacher.proto";
+
+message Clazz {
+  int32 id = 1;
+  repeated Student students = 2;
+  repeated Teacher teachers = 3;
+}

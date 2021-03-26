@@ -1,0 +1,8 @@
+syntax = "proto3";
+package school;
+import "Person.proto";
+
+message Teacher {
+  int32 id = 1;
+  base.Person info = 2;
+}
